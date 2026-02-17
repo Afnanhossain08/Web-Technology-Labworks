@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academic Profile Page</title>
+    <meta name="description" content="Personal academic profile for internship and academic review">
+    <meta name="keywords" content="academic, profile, education, internship, student">
+    <meta name="author" content="Afnan Hossain">
+    <link rel="stylesheet" href="CSS WT Lab Task3.css">
+</head>
+<body>
+ 
+    <header>
+        <h1>Afnan Hossain</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+ 
+    <main>
+ 
+        <section>
+            <h2>Biography</h2>
+            <p>I am focused on mastering HTML5 semantics and applying them in academic projects.</p>
+        </section>
+ 
+        <section>
+            <h2>Education</h2>
+ 
+            <table border="1">
+                <caption>Educational Background</caption>
+ 
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+ 
+                <tbody>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Bangladesh Noubahini School & College, Khulna</td>
+                        <td>2020</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>Bangladesh Noubahini School & College, Khulna</td>
+                        <td>2022</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>BSc in CSE</td>
+                        <td>American International University, Bangladesh</td>
+                        <td>2026</td>
+                        <td>3.6</td>
+                    </tr>
+                </tbody>
+ 
+            </table>
+        </section>
+
+        <section class="box-model-demo">
+            <h2>Part A: Box Model Demonstration</h2>
+            <p>Below are three divs with different padding, margin, border, width, and height values:</p>
+            <div class="box-demo-1">Box 1: padding 20px, margin 10px, border 3px solid</div>
+            <div class="box-demo-2">Box 2: padding 30px, margin 20px, border 4px dashed (with box-sizing: border-box)</div>
+            <div class="box-demo-3">Box 3: padding 10px, margin 5px, border 2px dotted</div>
+        </section>
+
+        <section>
+            <h2>Part B: Box Sizing Comparison</h2>
+            <p>Box 2 above uses <code>box-sizing: border-box</code> so padding and border are included in width calculation.</p>
+            <p>Boxes 1 and 3 use default sizing where padding and border are added to the width.</p>
+        </section>
+
+        <section>
+            <h2>Part C: Display Properties</h2>
+            <p>
+                <span class="display-block">This is display: block (takes full width, starts new line)</span>
+                <span class="display-inline">This is display: inline (flows with text)</span>
+                <span class="display-inline">More inline text</span>
+            </p>
+            <div class="display-inline-block">Display: inline-block 1</div>
+            <div class="display-inline-block">Display: inline-block 2</div>
+            <div class="display-none">This element has display: none (hidden, takes no space)</div>
+        </section>
+
+        <section>
+            <h2>Part D: Visibility vs Display</h2>
+            <p>The element below uses <code>visibility: hidden</code> - it's hidden but still takes up space:</p>
+            <div class="visibility-hidden">This is visibility: hidden (hidden but reserves space)</div>
+            <p>Compare with display: none above - it takes no space at all.</p>
+        </section>
+ 
+        <section>
+            <h2>Contact Form</h2>
+ 
+            <form action="#" method="post">
+ 
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+ 
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+ 
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="11 digit phone number"><br><br>
+ 
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required placeholder="Write your message" maxlength="200"></textarea><br><br>
+ 
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+ 
+            </form>
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>Contact: afnantahsin@gmail.com</p>
+        <p>© 2026 Afnan Hossain</p>
+    </footer>
+ 
+</body>
+</html>

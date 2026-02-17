@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 3px solid #004a99;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5em;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #0066cc;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+  font-size: 1.8em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0066cc;
+}
+
+p {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+thead {
+  background-color: #0066cc;
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e8f4f8;
+}
+
+form {
+  margin-top: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.75rem 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: white;
+  width: 48%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+input[type="reset"] {
+  background-color: #888;
+  color: white;
+  width: 48%;
+}
+
+input[type="reset"]:hover {
+  background-color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 3px solid #0066cc;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.box-model-demo {
+  margin-top: 2rem;
+}
+
+.box-demo-1 {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  margin: 10px;
+  border: 3px solid #0066cc;
+  background-color: #e8f4ff;
+}
+
+.box-demo-2 {
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+  margin: 20px;
+  border: 4px dashed #ff6600;
+  background-color: #fff3e0;
+  box-sizing: border-box;
+}
+
+.box-demo-3 {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px dotted #00aa00;
+  background-color: #e8ffe8;
+}
+
+.display-block {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #e8f4ff;
+  border: 1px solid #0066cc;
+}
+
+.display-inline {
+  display: inline;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  background-color: #ffe8e8;
+  border: 1px solid #ff0000;
+}
+
+.display-inline-block {
+  display: inline-block;
+  width: 48%;
+  padding: 1rem;
+  margin: 0.5rem 1%;
+  background-color: #e8ffe8;
+  border: 1px solid #00aa00;
+}
+
+.display-none {
+  display: none;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 1rem 0;
+}
