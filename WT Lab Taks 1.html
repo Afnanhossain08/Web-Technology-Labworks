@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Task 01 - JavaScript Basics</title>
+</head>
+<body>
+  <h2>JavaScript Basics and User Interaction</h2>
+  <div id="output"></div>
+
+  <script>
+
+    alert("Welcome to JavaScript Basics Lab!");
+    console.log("Welcome message logged in console.");
+    document.write("<p>Welcome message displayed using document.");
+
+    let studentName = "Afnan";  
+    let studentAge = 21;         
+
+    let nextAge = studentAge + 1;
+
+    let introMessage = "Student: " + studentName + ", Age: " + studentAge;
+
+    document.getElementById("output").innerHTML += `
+      <p>${introMessage}</p>
+      <p>Next year, age will be: ${nextAge}</p>
+    `;
+
+    let num1 = prompt("Enter first number:");
+    let num2 = prompt("Enter second number:");
+
+    num1 = Number(num1);
+    num2 = Number(num2);
+
+    let sum = num1 + num2;
+    let difference = num1 - num2;
+    let product = num1 * num2;
+
+    document.getElementById("output").innerHTML += `
+      <p>Sum: ${sum}</p>
+      <p>Difference: ${difference}</p>
+      <p>Product: ${product}</p>
+    `;
+
+    let checkNumber = prompt("Enter a number to check even/odd:");
+    checkNumber = parseInt(checkNumber);
+
+    if (checkNumber % 2 === 0) {
+      document.getElementById("output").innerHTML += `<p>${checkNumber} is Even</p>`;
+    } else {
+      document.getElementById("output").innerHTML += `<p>${checkNumber} is Odd</p>`;
+    }
+  </script>
+</body>
+</html>
