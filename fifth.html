@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="handleClick()">Run</button>
+<div id="output"></div>
+ 
+<script>
+let store = [];
+let turn = 1;
+ 
+function handleClick() {
+  if (turn <= 2) {
+    // First two clicks: add odd numbers
+    store[store.length] = turn * 2 - 1;  // 1, 3
+    console.log("Inserted value:", store[store.length - 1]);
+  } else {
+    // From 3rd click onwards: add squares infinitely
+    let square = turn * turn;
+    store[store.length] = square;
+    console.log("Stored square:", square);
+  }
+ 
+  turn++;
+ 
+  console.log("---- Current contents ----");
+  for (let i = 0; i < store.length; i++) {
+    console.log("Index", i, "has", store[i]);
+  }
+  
+  // Update the display
+  document.getElementById('output').innerHTML = 'Current store: ' + store.join(', ');
+}
+</script>
+</body>
+</html>
