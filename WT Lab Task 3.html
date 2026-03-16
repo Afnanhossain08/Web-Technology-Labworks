@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Task 03 - Arrays and Basic Objects</title>
+</head>
+<body>
+  <h2>Lab Task 03: Arrays and Basic Objects</h2>
+
+  <script>
+    document.write("<h3>A: Arrays</h3>");
+    let c=["Web Technologies","Computer Graphics","Artificial Intelligence and Expert Systems","Compiler Design","Database"];
+    document.write("<ul>");
+    for(let i=0;i<c.length;i++)document.write("<li>"+c[i]+"</li>");
+    document.write("</ul>");
+
+    c.push("Computer Networks");
+    document.write("<p>After add:</p><ul>");
+    for(let i=0;i<c.length;i++)document.write("<li>"+c[i]+"</li>");
+    document.write("</ul>");
+
+    document.write("<h3>B: Array Ops</h3>");
+    document.write("<p>Length: "+c.length+"</p>");
+    document.write("<p>Removed: "+c.pop()+"</p>");
+    c.unshift("Python");
+    document.write("<p>Final list:</p><ul>");
+    for(let i=0;i<c.length;i++)document.write("<li>"+c[i]+"</li>");
+    document.write("</ul>");
+
+    document.write("<h3>C: Object</h3>");
+    let s={name:"Afnan",id:"23-54727-3",dept:"CSE",cgpa:3.75};
+    document.write("<p>"+s.name+" | "+s.id+" | "+s.dept+" | "+s.cgpa+"</p>");
+
+    document.write("<h3>D: Array of Objects</h3>");
+    let st=[
+      {name:"Afnan",id:"23-54727-3",dept:"CSE",cgpa:3.75},
+      {name:"Sara",id:"23-54728-3",dept:"CSE",cgpa:3.60},
+      {name:"Ali",id:"23-54729-3",dept:"CSE",cgpa:3.82}
+    ];
+    for(let i=0;i<st.length;i++){
+      let o=st[i];
+      document.write("<p>"+o.name+" | "+o.id+" | "+o.dept+" | "+o.cgpa+"</p>");
+    }
+  </script>
+</body>
+</html>

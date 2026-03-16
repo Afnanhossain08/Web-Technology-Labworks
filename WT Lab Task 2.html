@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Task 02</title>
+</head>
+<body>
+  <h2>Lab Task 02: Functions, Loops, and String Operations</h2>
+
+  <script>
+    document.write("<h3>Part A: Functions</h3>");
+    
+    function calculateSum(a, b) {
+      return a + b;
+    }
+
+    let sum = calculateSum(15, 25);
+    document.write("<p>Sum: " + sum + "</p>");
+
+    document.write("<h3>Part B: Loops</h3>");
+    document.write("<p>Numbers 1 to 10: ");
+    for (let i = 1; i <= 10; i++) {
+      document.write(i + " ");
+    }
+    document.write("</p>");
+
+    document.write("<p>Even numbers 1 to 20: ");
+    let num = 1;
+    while (num <= 20) {
+      if (num % 2 === 0) {
+        document.write(num + " ");
+      }
+      num++;
+    }
+    document.write("</p>");
+
+    document.write("<h3>Part C: String Operations</h3>");
+    let fullName = "Afnan Hossain";
+    document.write("<p>Name: " + fullName + "</p>");
+    document.write("<p>Uppercase: " + fullName.toUpperCase() + "</p>");
+    document.write("<p>Length: " + fullName.length + "</p>");
+    
+    let firstName = fullName.split(" ")[0];
+    document.write("<p>First Name: " + firstName + "</p>");
+
+    document.write("<h3>Part D: String Length Check</h3>");
+    
+    function checkStringLength(str) {
+      if (str.length > 5) {
+        return "Length is greater than 5";
+      } else {
+        return "Length is not greater than 5";
+      }
+    }
+
+    let input = prompt("Enter a string:");
+    if (input !== null) {
+      document.write("<p>You entered: " + input + "</p>");
+      document.write("<p>" + checkStringLength(input) + "</p>");
+    }
+  </script>
+</body>
+</html>
