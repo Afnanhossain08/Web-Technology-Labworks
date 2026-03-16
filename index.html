@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Learning Portal</h1>
+    </header>
+    <main>
+        <fieldset id="enrollment-panel">
+            <legend>Course Enrollment Panel</legend>
+            <p>Course: JavaScript Basics</p>
+            <p>Fee per seat: 1000 Tk</p>
+            <label for="seats">Number of seats:</label>
+            <input type="number" id="seats" min="1" value="1">
+            <p>Total course fee: <span id="total-fee">1000</span> Tk</p>
+            <p id="discount-message" style="display: none;">You are eligible for a special discount.</p>
+            <p id="error-message" style="display: none; color: blue;">Quantity must be at least 1. Reset to 1.</p>
+        </fieldset>
+        <fieldset id="details-form">
+            <legend>Enrollment Details Form</legend>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name">
+            <label for="email">Contact Email:</label>
+            <input type="email" id="email">
+            <label for="class-type">Class Type:</label>
+            <select id="class-type">
+                <option value="">Select</option>
+                <option value="online">Online Class</option>
+                <option value="campus">On-Campus Class</option>
+            </select>
+            <p>Final payable amount: <span id="final-amount">0</span> Tk</p>
+            <label>
+                <input type="checkbox" id="confirm"> I confirm my enrollment details are correct
+            </label>
+            <br>
+            <button id="submit-btn" style="display: none;">Submit</button>
+        </fieldset>
+    </main>
+    <footer>
+        <p>All Rights Reserved 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
