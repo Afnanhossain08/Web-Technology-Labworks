@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Afnan Hossain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Portfolio</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 id="name">Afnan Hossain</h1>
+                <h2 id="tagline">Web Developer</h2>
+                <p id="intro">Passionate about creating beautiful and functional websites. Skilled in HTML, CSS, JavaScript, and more.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/007bff/ffffff?text=E-commerce" alt="E-commerce Website">
+                        <div class="project-card-content">
+                            <h3>E-commerce Website</h3>
+                            <p>A fully responsive online store built with HTML, CSS, and JavaScript.</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/28a745/ffffff?text=Weather+App" alt="Weather App">
+                        <div class="project-card-content">
+                            <h3>Weather App</h3>
+                            <p>A weather application that fetches data from an API and displays current conditions.</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/ffc107/000000?text=Task+Manager" alt="Task Manager">
+                        <div class="project-card-content">
+                            <h3>Task Manager</h3>
+                            <p>A productivity app for managing daily tasks with local storage.</p>
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Afnan Hossain. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
